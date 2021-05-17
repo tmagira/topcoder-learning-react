@@ -3,12 +3,21 @@ import { useState } from "react";
 import "./styles.scss";
 
 function MineSiteInput() {
-  const [names] = useState([""]);
+  const [names] = useState(["", ""]);
+
+  function addMore() {
+    alert('Hello!');
+  }
 
   return (
     <div className="mine-site-input">
       Mine Site Input
-      <button>test</button>
+
+      <button id="addMoreButton" onClick={addMore}>Add More</button>
+      <button id="doneButton">Done</button>
+
+     
+
       {names.map((val, index) => (
         <div key={index}>
           <div>ore {index + 1}</div>

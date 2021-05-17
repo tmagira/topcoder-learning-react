@@ -8,6 +8,7 @@ function MineSiteInput() {
   return (
     <div className="mine-site-input">
       Mine Site Input
+      <button>test</button>
       {names.map((val, index) => (
         <div key={index}>
           <div>ore {index + 1}</div>

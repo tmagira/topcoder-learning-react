@@ -7,6 +7,7 @@ function MineSiteInput() {
 
   function addMore() {
     alert('Hello!');
+    this.names.concat("");
   }
 
   return (
@@ -16,7 +17,6 @@ function MineSiteInput() {
       <button id="addMoreButton" onClick={addMore}>Add More</button>
       <button id="doneButton">Done</button>
 
-     
 
       {names.map((val, index) => (
         <div key={index}>

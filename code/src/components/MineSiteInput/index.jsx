@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./styles.scss";
 
 function MineSiteInput() {
-  const [names] = useState(["", ""]);
+  const [names] = useState(["", "", "", ""]);
 
   function addMore() {
     alert('Hello!');

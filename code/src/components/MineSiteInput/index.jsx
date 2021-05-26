@@ -3,18 +3,13 @@ import { useState } from "react";
 import "./styles.scss";
 
 function MineSiteInput() {
-  const [names] = useState(["", "", "", ""]);
-
-  function addMore() {
-    alert('Hello!');
-    this.names.concat("");
-  }
+  const [names, setNames] = useState([""]);
 
   return (
     <div className="mine-site-input">
       Mine Site Input
 
-      <button id="addMoreButton" onClick={addMore}>Add More</button>
+      <button id="addMoreButton" onClick={() => setNames(names => [...names, ""])}>Add More</button>
       <button id="doneButton">Done</button>
 
 

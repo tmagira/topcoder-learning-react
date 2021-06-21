@@ -36,6 +36,10 @@ function MineSiteInput() {
              setOreValues(ores); //masukkan isi array sementara ke oreValues
             }}
           />
+          //
+          <button>
+            add ore
+          </button>
         </div>
       ))}
     </div>

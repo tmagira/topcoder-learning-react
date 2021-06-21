@@ -4,6 +4,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run build
+RUN apk add --no-cache python3 py3-pip
 
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
